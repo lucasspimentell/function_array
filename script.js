@@ -11,13 +11,13 @@ function adicionar() {
         alert("insira um valor");
     }
     else if (valorNum.value < 1) {
-        alert("insira um valor maior ou igual a 10");
+        alert("insira um valor maior ou igual a 1!");
     }
     else if (valorNum.value > 100) {
-        alert('insira um valor menor que 100');
+        alert('insira um valor menor que 100!');
 
     } else if (procurar != -1) {
-        alert('esse ja existe')
+        alert('Número ja existente!')
     }
 
     else {
@@ -44,8 +44,8 @@ function fim() {
     let media = 0;
     for (let pos = 0; pos < numero.length; pos++) {
 
-        soma = soma + numero[pos]
-        media = soma / numero.length
+        soma = soma + numero[pos];
+        media = soma / numero.length;
     }
     
     let maior = num;
@@ -53,11 +53,11 @@ function fim() {
     for (let pos = 0; pos < numero.length; pos++) {
 
         if (numero[pos] > maior) {
-            maior = numero[pos]
+            maior = numero[pos];
 
 
         } else if (numero[pos] < menor) {
-            menor = numero[pos]
+            menor = numero[pos];
         }
 
 
@@ -65,7 +65,7 @@ function fim() {
 
 
     resultado.innerHTML = `Ao todo temos : ${numero.length} números cadastrados <br>A soma deles é: ${soma} <br> A Media: ${(media).toFixed(2)}<br>
-    O maior número é: ${maior}<br> o menor: ${menor}`
+    O maior número é: ${maior}<br> o menor: ${menor}`;
 
 }
 
